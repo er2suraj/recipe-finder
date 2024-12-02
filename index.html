@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="search-section">
+      <h1 id="logo">Recipe Finder</h1>
+      <input type="text" id="searchInput" placeholder="Search recipes by ingredients or name">
+      <button id="search_button" onclick="searchRecipes()">Search</button>
+    </div>
+
+    <div class="filter-section">
+      <label for="categorySelect">Filter by Category:</label>
+      <select id="categorySelect" onchange="filterByCategory()">
+        <option value="">All</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+    </div>
+
+    <div id="spinner" class="spinner" style="display: none;">Loading...</div>
+
+    <div id="recipeDisplay" class="recipe-display"></div>
+
+    <div class="pagination">
+      <button onclick="prevPage()">Previous</button>
+      <span id="pageNumber">Page 1</span>
+      <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div class="favorites-section">
+      <h2>Favorite Recipes</h2>
+      <div id="favoriteRecipes"></div>
+    </div>
+
+    <h2 class="own_recipe">Add Your Own Recipe</h2>
+    <form id="addRecipeForm">
+      <input type="text" id="userRecipeName" placeholder="Recipe Name" required>
+      <textarea id="userRecipeIngredients" placeholder="Ingredients (comma separated)" required></textarea>
+      <textarea id="userRecipeInstructions" placeholder="Instructions" required></textarea>
+      <input type="file" id="userRecipeImage" accept="image/*">
+      <button type="button" onclick="addUserRecipe()">Add Recipe</button>
+    </form>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Recipe Finder</h3>
+          <p>Discover delicious recipes and save your favorites with ease.</p>
+        </div>
+        <div class="footer-center">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/instagram-icon.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal Section -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  }
+    body{
+      background-color: rgb(154, 164, 194);
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      
+    }
+    
+    h1 {
+      text-align: center;
+      color: rgb(231, 234, 234);
+    }
+    .search-section{
+      width: 100%;
+      height: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(92, 92, 188);
+    }
+    .logo{
+      width: 20%;
+      height: 50%;
+    }
+    #searchInput{
+      width: 60%;
+      height: 50%;
+      padding: 1%;
+      background-color: whitesmoke;
+      border: none;
+      border-radius: 20px;
+      margin-left: 2.5%;
+    }
+    #search_button{
+      width: 15%;
+      height: 50%;
+      margin-left: 2.5%;
+      border: none;
+      border-radius: 20px;
+    }
+    .filter-section {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    
+    .filter-section select {
+      padding: 10px;
+      margin-right: 10px;
+      width: 60%;
+      max-width: 400px;
+      border-radius: 10px;
+      background-color: aliceblue;
+    }
+    
+    button {
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .spinner {
+      text-align: center;
+      margin: 20px;
+      font-size: 1.2em;
+    }
+    
+    .recipe-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .recipe-card {
+      width: 200px;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .recipe-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .favorites-section {
+      margin-top: 20px;
+    }
+    
+    .favorites-section h2 {
+      text-align: center;
+    }
+    
+    .recipe-card button {
+      margin-top: 5px;
+      padding: 5px 10px;
+    }
+  #favoriteRecipes{
+      display: flex;
+  }  
+  form{
+      display: flex;
+  }
+  .own_recipe{
+    margin-top: 2%;
+  }
+  #addRecipeForm{
+    width: 100%;
+    height: 15vh;
+  }
+  #addRecipeForm button, input, textarea{ 
+    height: 50%;
+    border-radius: 10px;
+  }
+  .footer {
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-left h3,
+  .footer-center h4,
+  .footer-right h4 {
+    margin-bottom: 10px;
+    color: rgb(231, 234, 234);
+  }
+  
+  .footer-left p {
+    font-size: 0.9em;
+  }
+  
+  .footer-center ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-center ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-center ul li a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-center ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-right .social-icons a img {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgb(100, 100, 100);
+    font-size: 0.8em;
+  }
+  .footer{
+    margin-top: 2%;
+  }
+  
+  
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.modal-content ul {
+  text-align: left;
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #f04;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #c03;
+}
